@@ -25,7 +25,7 @@ jobs:
 
     - name: Update proxy status
       env:
-        IP_FILE: 'ip'
+        IP_FILE: 'iplog'
         API_URL: 'https://p01--boiling-frame--kw6dd7bjv2nr.code.run/check?ip={ip}&host=speed.cloudflare.com&port={port}&tls=true'
       run: |
         python update_proxy_status.py
